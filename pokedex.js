@@ -1,3 +1,5 @@
+// <!-- UPGRADEHUB POKÉDEX - Pau Isach Noguera -->
+
 const pokedex$$ = document.getElementById("pokedex");
 const ALL_POKEMONS = []; // Una vez guardada, nunca la modificaremos. Solo para añadir mas.
 const TYPES = [
