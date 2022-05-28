@@ -1,25 +1,22 @@
-// <!--Ejercicio 4: bMW Website-->
+// <!-- UPGRADEHUB POKÉDEX - Pau Isach Noguera -->
+
 //DECLARACIÓN VARIABLES
 
 //Background Colors
-
+$background-image: url("./Images/Wallpaper.jpg");
 
 //Tipografy Colors
 $light-color: white;
 $dark-color: black;
-$pc-color: rgb(9, 117, 32);
-$tablet-color: rgb(217, 255, 2); 
-$normal-desktop-color: rgb(250, 151, 3);
-$big-desktop-color: rgb(235, 8, 8);
-$super-desktop-color: rgb(255, 6, 193);
-$form-color: #ccc;
+$mid-color: gray;
+$outside-color: rgb(0, 0, 223);
+$inside-color: rgb(240, 196, 3); 
 
 //Tipografy Font
-$type-font-header: monaco,Consolas,Lucida Console,monospace;;
-
-//Font Type
-
+$type-font: rubik;
 
 //Font Size
- 
+ $title-font: 24px; 
+ $subtitle-font: 16px; 
+ $tab-font: 14px; 
 

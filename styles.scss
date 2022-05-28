@@ -1,84 +1,104 @@
 // <!-- UPGRADEHUB POKÉDEX - Pau Isach Noguera -->
 
+//IMPORTACIÓN LIBRERIAS SCSS
+@import "SCSS/scss/styles/librerias/_colors.scss";
+@import "SCSS/scss/styles/librerias/_responsive.scss";
+
+//BODY
 body {
-    background-color: red;
-    margin: 0;
-    font-family: rubik;
-    color: white;
+    background-image: $background-image;
+    font-family: $type-font;
+    text-transform: capitalize;
+    color: $light-color;
   }
+
   .container {
-    padding: 40px;
-    margin: 0 auto;
-  }
-  h1 {
-    text-transform: uppercase;
     text-align: center;
-    font-size: 54px;
-  }
+
+    &__title {
+      width: 700px;
+      height: 350px;  
+    }
+
   .card {
-    list-style: none;
-    padding: 40px;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: $light-color;
+    color: $dark-color;
     text-align: center;
-  }
-  .card-title {
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 0;
-  }
-  .card-subtitle {
-    font-weight: lighter;
-    color: #666;
-    margin-top: 5px;
-  }
-  .card-image {
-    height: 180px;
+    border: 4px solid $inside-color;
+    outline: 5px solid $outside-color;
+    border-radius: 20px; 
+    padding: 10px;
+    cursor: pointer; 
+  
+    &__title {
+      text-transform: uppercase;
+      font-size: $title-font;
+    }
+    &__subtitle {
+      text-transform: capitalize;
+      color: $mid-color;
+      font-size:  $subtitle-font; 
+      margin-bottom: 10px; 
+    }
+    &__image {
+      height: 100px;
+    }
   }
 
   #pokedex {
     padding-inline-start: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 40px;
   }
 
   .card:hover {
-    animation: bounce 0.5s linear;
+    animation: bounce 1.0s;
   }
-
   @keyframes bounce {
     20% {
-      transform: translateY(-6px);
+      transform: translateY(-15px);
     }
     40% {
       transform: translateY(0px);
     }
     60% {
-      transform: translateY(-2px);
+      transform: translateY(-5px);
     }
     80% {
       transform: translateY(-0px);
     }
   }
   
-  .input-container {
+  &__input {
     text-align: center;
+    margin-bottom: 40px; 
     input {
-      padding: 20px 10px;
-      font-size: 24px;
-      font-weight: bold;
+      font-size: $subtitle-font;
+      padding: 10px; 
+      width: 300px; 
+      color: $mid-color;
+      border: 3px solid $inside-color;
+      outline: 5px solid $outside-color;
+      border-radius: 10px; 
     }
   }
+}
+
   .types {
       display: flex;
       flex-wrap: wrap;
       span {
           padding: 12px;
-          border: 1px solid black;
-          margin-bottom: 10px;
-          margin-right: 10px;
+          font-size: $tab-font;
+          border: 3px solid $inside-color;
+          outline: 3px solid $outside-color;
+          background-color: $light-color; 
+          color: $dark-color; 
+          border-radius: 10px; 
+          margin-right: 20px;
+          margin-bottom: 20px; 
+          width: 60px; 
           cursor: pointer;
       }
   }
