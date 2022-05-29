@@ -16,9 +16,34 @@
 
 <body>
     <div class="container">
-        <img class="container__title" src="./Images/Pokemon.png" alt="Logo de Pokemon">
+        <div class="container__header">
+            <img class="container__ash" src="./Images/ash.gif" alt="Ash gif">
+            <img class="container__title" src="./Images/Pokemon.png" alt="Logo de Pokemon">
+            <img class="container__pikachu" src="./Images/pikachu.gif" alt="Pikachu gif">
+        </div>
         <div class="container__input">
             <input id="input-search" type="text" placeholder = "Introduce nombre/número del pokémon" />
+            <select id="select-type">
+                <option value="all">All pokemons</option>
+                <option value="normal">Normal</option>
+                <option value="fighting">Fighting</option>
+                <option value="flying">Flying</option>
+                <option value="poison">Poison</option>
+                <option value="ground">Ground</option>
+                <option value="rock">Rock</option>
+                <option value="bug">Bug</option>
+                <option value="ghost">Ghost</option>
+                <option value="steel">Steel</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="psychic">Psychic</option>
+                <option value="ice">Ice</option>
+                <option value="dragon">Dragon</option>
+                <option value="fairy">Fairy</option>
+            </select> 
+            <a href="./toDo.html">Hazte con todos! (toDO)</a>
         </div>
         <div class="types"></div>
         <ol id="pokedex"></ol>

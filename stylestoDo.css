@@ -1,0 +1,226 @@
+@import url(./styles.css);
+body {
+  background-image: url("./Images/Wallpaper.jpg");
+  font-family: rubik;
+  text-transform: capitalize;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+}
+
+.container__pikachu {
+  width: 150px;
+  height: auto;
+  border: 4px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 20px;
+}
+
+.container__ash {
+  width: 210px;
+  height: auto;
+  border: 4px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 20px;
+}
+
+.container__title {
+  width: 700px;
+  height: 350px;
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+
+.container__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container__search input {
+  font-size: 14px;
+  font-family: rubik;
+  background-color: white;
+  color: gray;
+  border: 3px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+}
+
+.container__search a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: rubik;
+  background-color: black;
+  color: gray;
+  text-align: center;
+  border: 3px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container__search button {
+  font-size: 14px;
+  font-family: rubik;
+  background-color: black;
+  color: gray;
+  border: 3px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #f8c76c;
+  color: black;
+  text-align: center;
+  border: 4px solid #f0c403;
+  outline: 5px solid #0000df;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.card__subtitle {
+  text-transform: capitalize;
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card__image {
+  width: 100px;
+}
+
+.card__id {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__buttons__catch {
+  background-color: #05c915;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #f0c403;
+  outline: 2px solid #0000df;
+  border-radius: 10px;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.card__buttons__delete {
+  background-color: #c90505;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #f0c403;
+  outline: 2px solid #0000df;
+  border-radius: 10px;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.card:hover .card__image {
+  -webkit-animation: bounce2 0.75s;
+          animation: bounce2 0.75s;
+}
+
+@-webkit-keyframes bounce2 {
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  40% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  60% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+@keyframes bounce2 {
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  40% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  60% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+#pokedex-list {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 40px;
+}
+/*# sourceMappingURL=stylestoDo.css.map */
