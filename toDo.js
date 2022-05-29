@@ -81,15 +81,27 @@ const creation = (pokemons) => {
       li.classList.add("green");
     }
     button1.innerText = "X";
-    button2.innerText = "✔";
     const borrar = (event) => {
-      event.remove();
+        event.remove();
     };
     button1.addEventListener("click", () => borrar(li));
     const catched = (event) => {
-      li.classList.add("green");
+        if(li.classList.contains("green")){
+            li.classList.remove("green");
+            button2.innerText = "✔";
+        } else {
+            li.classList.add("green");
+            button2.innerText = "↻";
+
+        }
     };
     button2.addEventListener("click", () => catched(li));
+    if(li.classList.contains("green")){
+        button2.innerText = "↻";
+    } else {
+        button2.innerText = "✔";
+
+    }
     buttonsDiv.appendChild(button2);
     buttonsDiv.appendChild(button1);
     li.appendChild(buttonsDiv);
