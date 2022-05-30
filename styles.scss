@@ -4,7 +4,7 @@
 @import "SCSS/scss/styles/librerias/_colors.scss";
 @import "SCSS/scss/styles/librerias/_responsive.scss";
 
-//BODY
+//HTML-SCSS
 body {
     background-image: $background-image;
     font-family: $type-font;
@@ -41,6 +41,8 @@ body {
       height: 350px;  
       animation: bounce 1s infinite ease-in-out;
     }
+
+    //Keyframe bounce infinito título pokédex
     @keyframes bounce {
       20% {
         transform: translateY(-15px);
@@ -55,7 +57,8 @@ body {
         transform: translateY(-0px);
       }
     }
-
+  
+  //JS-SCSS
   .card {
     background-color: $light-color;
     color: $dark-color;
@@ -103,11 +106,13 @@ body {
     grid-gap: 40px;
   }
 
+  //Animación solo cuando pasemos ratón por encima
   .card:hover {
     .card__image {
       animation: bounce2 0.75s;
     }
   }
+  //Keyframe bounce finito pokemon carta
   @keyframes bounce2 {
     20% {
       transform: translateY(-20px);
@@ -123,6 +128,7 @@ body {
     }
   }
   
+  //HTML-SCSS
   &__input {
     display: flex;
     flex-wrap: wrap;  
@@ -169,6 +175,7 @@ body {
   }
 }
 
+  //JS-SCSS
   .types {
       display: flex;
       flex-wrap: wrap;

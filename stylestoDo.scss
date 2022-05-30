@@ -7,7 +7,7 @@
 @import "SCSS/scss/styles/librerias/_colors.scss";
 @import "SCSS/scss/styles/librerias/_responsive.scss";
 
-//BODY
+//HTML-SCSS
 body {
   background-image: $background-image;
   font-family: $type-font;
@@ -44,7 +44,6 @@ body {
     height: 350px;
     animation: bounce 1s infinite ease-in-out;
   }
-
   &__search {
     display: flex;
     justify-content: space-around;
@@ -89,6 +88,7 @@ body {
   }
 }
 
+//JS-SCSS
 .card {
   background-color: $todo-color;
   color: $dark-color;
@@ -154,11 +154,13 @@ body {
   background-color: $catch-color;
 }
 
+//Animación solo cuando pasemos raton por encima
 .card:hover {
   .card__image {
     animation: bounce2 0.75s;
   }
 }
+//Keyframe bounce finito pokemon carta
 @keyframes bounce2 {
   20% {
     transform: translateY(-20px);
